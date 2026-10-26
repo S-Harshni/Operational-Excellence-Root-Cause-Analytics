@@ -1,0 +1,10 @@
+,coef,ci_low,ci_high,p_value
+Customer region: Centre-West,0.4072,-0.0177,0.8321,0.0604
+Customer region: North,-1.1132,-2.3209,0.0946,0.0708
+Customer region: Northeast,-0.6759,-1.2423,-0.1095,0.0193
+Customer region: South,0.8145,0.576,1.053,0.0
+"Distance (per 1,000 km)",12.166,11.8675,12.4645,0.0
+Weight (per kg),1.6299,1.5082,1.7515,0.0
+Volume (per litre),0.188,0.1526,0.2235,0.0
+Items in the order,11.2338,10.6048,11.8629,0.0
+Sellers in the order,3.6259,2.0352,5.2166,0.0

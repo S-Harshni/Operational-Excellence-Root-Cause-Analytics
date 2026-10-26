@@ -1,0 +1,1992 @@
+{
+ "headline": {
+  "orders_analysed": 94819,
+  "avg_processing_days": 12.6,
+  "median_processing_days": 10.26,
+  "on_time_rate_pct": 93.1,
+  "delay_rate_pct": 6.86,
+  "cost_per_order": 22.77,
+  "freight_share_pct": 16.6,
+  "throughput_per_week": 1104.0,
+  "sellers": 2927,
+  "late_orders": 6506,
+  "share_of_time": {
+   "approval": 3.2,
+   "seller handling": 22.4,
+   "carrier transit": 74.4
+  },
+  "share_of_extra_days": {
+   "approval": 0.5,
+   "seller handling": 12.8,
+   "carrier transit": 86.7
+  },
+  "extra_days": {
+   "approval": 0.11,
+   "seller handling": 2.93,
+   "carrier transit": 19.88
+  },
+  "top_cause": "Slow carrier transit",
+  "top_cause_pct": 65.8,
+  "second_cause": "Seller missed hand-off deadline",
+  "second_cause_pct": 25.9,
+  "top_two_causes_pct": 91.7,
+  "concentration": {
+   "seller_id": {
+    "groups": 2927,
+    "groups_with_late_orders": 1266,
+    "groups_for_80pct_of_late": 396,
+    "share_of_groups_pct": 13.5
+   },
+   "route": {
+    "groups": 407,
+    "groups_with_late_orders": 210,
+    "groups_for_80pct_of_late": 21,
+    "share_of_groups_pct": 5.2
+   },
+   "category": {
+    "groups": 74,
+    "groups_with_late_orders": 67,
+    "groups_for_80pct_of_late": 15,
+    "share_of_groups_pct": 20.3
+   },
+   "customer_state": {
+    "groups": 27,
+    "groups_with_late_orders": 27,
+    "groups_for_80pct_of_late": 8,
+    "share_of_groups_pct": 29.6
+   }
+  },
+  "time_r2": 0.337,
+  "cost_r2": 0.628,
+  "cost_decomposition": {
+   "cost_per_order_jan_jun_2017": 21.79,
+   "cost_per_order_mar_aug_2018": 24.02,
+   "change_pct": 10.3,
+   "explained_by_order_mix": -1.48,
+   "unexplained_rate_change": 3.72,
+   "avg_weight_kg": [
+    2.56,
+    2.29
+   ],
+   "avg_distance_km": [
+    634.0,
+    571.0
+   ],
+   "avg_items": [
+    1.128,
+    1.144
+   ]
+  },
+  "worst_region": "Northeast",
+  "worst_region_delay_pct": 12.85,
+  "best_region": "South",
+  "best_region_delay_pct": 6.02,
+  "peak_delay_month": "2018-03-01",
+  "peak_delay_rate_pct": 19.0,
+  "review_late": 2.25,
+  "review_ontime": 4.28
+ },
+ "quality": {
+  "orders_in_source": 99441,
+  "products_without_category": 610,
+  "items_without_weight": 18,
+  "impossible_distances_removed": 4,
+  "orders_without_distance": 1270,
+  "duplicate_reviews_removed": 559,
+  "orders_not_delivered": 2963,
+  "cancelled_or_unavailable": 1234,
+  "delivered_missing_a_date": 23,
+  "carrier_date_before_approval": 1350,
+  "delivered_before_carrier_pickup": 23,
+  "orders_without_items": 775,
+  "orders_outside_jan2017_aug2018": 349,
+  "delivered_orders_analysed": 94819
+ },
+ "monthly": [
+  {
+   "month": "2017-01-01",
+   "orders_placed": 800,
+   "orders_delivered": 747,
+   "avg_processing_days": 12.6343,
+   "median_processing_days": 10.7145,
+   "on_time_rate": 0.9705,
+   "delay_rate": 0.0295,
+   "cost_per_order": 20.933,
+   "freight_share_of_price": 0.1402,
+   "avg_approval_days": 0.4965,
+   "avg_handling_days": 2.9158,
+   "avg_transit_days": 9.222,
+   "avg_promised_days": 39.4334,
+   "seller_handoff_miss_rate": 0.2209,
+   "active_sellers": 217,
+   "avg_review": 4.1874,
+   "orders_per_active_seller": 3.4424,
+   "throughput_per_week": 168.6774,
+   "cancel_rate": 0.0162
+  },
+  {
+   "month": "2017-02-01",
+   "orders_placed": 1780,
+   "orders_delivered": 1638,
+   "avg_processing_days": 13.1839,
+   "median_processing_days": 10.9552,
+   "on_time_rate": 0.9701,
+   "delay_rate": 0.0299,
+   "cost_per_order": 22.3952,
+   "freight_share_of_price": 0.158,
+   "avg_approval_days": 0.3862,
+   "avg_handling_days": 3.2273,
+   "avg_transit_days": 9.5704,
+   "avg_promised_days": 31.8497,
+   "seller_handoff_miss_rate": 0.1722,
+   "active_sellers": 398,
+   "avg_review": 4.1886,
+   "orders_per_active_seller": 4.1156,
+   "throughput_per_week": 409.5,
+   "cancel_rate": 0.0348
+  },
+  {
+   "month": "2017-03-01",
+   "orders_placed": 2682,
+   "orders_delivered": 2545,
+   "avg_processing_days": 12.954,
+   "median_processing_days": 10.1269,
+   "on_time_rate": 0.9544,
+   "delay_rate": 0.0456,
+   "cost_per_order": 21.6531,
+   "freight_share_of_price": 0.1535,
+   "avg_approval_days": 0.2527,
+   "avg_handling_days": 2.8632,
+   "avg_transit_days": 9.838,
+   "avg_promised_days": 24.7342,
+   "seller_handoff_miss_rate": 0.0676,
+   "active_sellers": 474,
+   "avg_review": 4.1721,
+   "orders_per_active_seller": 5.3692,
+   "throughput_per_week": 574.6774,
+   "cancel_rate": 0.0242
+  },
+  {
+   "month": "2017-04-01",
+   "orders_placed": 2404,
+   "orders_delivered": 2279,
+   "avg_processing_days": 14.9454,
+   "median_processing_days": 12.7549,
+   "on_time_rate": 0.9342,
+   "delay_rate": 0.0658,
+   "cost_per_order": 21.7868,
+   "freight_share_of_price": 0.1465,
+   "avg_approval_days": 0.529,
+   "avg_handling_days": 3.1806,
+   "avg_transit_days": 11.2357,
+   "avg_promised_days": 27.3688,
+   "seller_handoff_miss_rate": 0.0737,
+   "active_sellers": 486,
+   "avg_review": 4.1272,
+   "orders_per_active_seller": 4.6893,
+   "throughput_per_week": 531.7667,
+   "cancel_rate": 0.0112
+  },
+  {
+   "month": "2017-05-01",
+   "orders_placed": 3700,
+   "orders_delivered": 3530,
+   "avg_processing_days": 11.3298,
+   "median_processing_days": 9.7913,
+   "on_time_rate": 0.97,
+   "delay_rate": 0.03,
+   "cost_per_order": 21.8819,
+   "freight_share_of_price": 0.1583,
+   "avg_approval_days": 0.4001,
+   "avg_handling_days": 2.5809,
+   "avg_transit_days": 8.3487,
+   "avg_promised_days": 24.2943,
+   "seller_handoff_miss_rate": 0.0731,
+   "active_sellers": 557,
+   "avg_review": 4.2201,
+   "orders_per_active_seller": 6.3375,
+   "throughput_per_week": 797.0968,
+   "cancel_rate": 0.0162
+  },
+  {
+   "month": "2017-06-01",
+   "orders_placed": 3245,
+   "orders_delivered": 3130,
+   "avg_processing_days": 11.9885,
+   "median_processing_days": 10.7989,
+   "on_time_rate": 0.97,
+   "delay_rate": 0.03,
+   "cost_per_order": 21.7297,
+   "freight_share_of_price": 0.1614,
+   "avg_approval_days": 0.3882,
+   "avg_handling_days": 2.7433,
+   "avg_transit_days": 8.857,
+   "avg_promised_days": 24.0047,
+   "seller_handoff_miss_rate": 0.0796,
+   "active_sellers": 516,
+   "avg_review": 4.2067,
+   "orders_per_active_seller": 6.0659,
+   "throughput_per_week": 730.3333,
+   "cancel_rate": 0.0123
+  },
+  {
+   "month": "2017-07-01",
+   "orders_placed": 4026,
+   "orders_delivered": 3841,
+   "avg_processing_days": 11.6155,
+   "median_processing_days": 10.1711,
+   "on_time_rate": 0.9719,
+   "delay_rate": 0.0281,
+   "cost_per_order": 21.8428,
+   "freight_share_of_price": 0.1753,
+   "avg_approval_days": 0.387,
+   "avg_handling_days": 2.7152,
+   "avg_transit_days": 8.5133,
+   "avg_promised_days": 23.3278,
+   "seller_handoff_miss_rate": 0.0773,
+   "active_sellers": 586,
+   "avg_review": 4.2499,
+   "orders_per_active_seller": 6.5546,
+   "throughput_per_week": 867.3226,
+   "cancel_rate": 0.0199
+  },
+  {
+   "month": "2017-08-01",
+   "orders_placed": 4331,
+   "orders_delivered": 4190,
+   "avg_processing_days": 11.1517,
+   "median_processing_days": 9.7992,
+   "on_time_rate": 0.9709,
+   "delay_rate": 0.0291,
+   "cost_per_order": 21.7127,
+   "freight_share_of_price": 0.1642,
+   "avg_approval_days": 0.3843,
+   "avg_handling_days": 2.6997,
+   "avg_transit_days": 8.0677,
+   "avg_promised_days": 23.4805,
+   "seller_handoff_miss_rate": 0.0678,
+   "active_sellers": 678,
+   "avg_review": 4.3026,
+   "orders_per_active_seller": 6.1799,
+   "throughput_per_week": 946.129,
+   "cancel_rate": 0.0136
+  },
+  {
+   "month": "2017-09-01",
+   "orders_placed": 4285,
+   "orders_delivered": 4136,
+   "avg_processing_days": 11.8412,
+   "median_processing_days": 10.3144,
+   "on_time_rate": 0.9565,
+   "delay_rate": 0.0435,
+   "cost_per_order": 22.5786,
+   "freight_share_of_price": 0.1545,
+   "avg_approval_days": 0.4158,
+   "avg_handling_days": 2.7779,
+   "avg_transit_days": 8.6475,
+   "avg_promised_days": 22.4324,
+   "seller_handoff_miss_rate": 0.0721,
+   "active_sellers": 708,
+   "avg_review": 4.2534,
+   "orders_per_active_seller": 5.8418,
+   "throughput_per_week": 965.0667,
+   "cancel_rate": 0.0135
+  },
+  {
+   "month": "2017-10-01",
+   "orders_placed": 4631,
+   "orders_delivered": 4478,
+   "avg_processing_days": 11.8567,
+   "median_processing_days": 10.2634,
+   "on_time_rate": 0.9582,
+   "delay_rate": 0.0418,
+   "cost_per_order": 22.9722,
+   "freight_share_of_price": 0.1587,
+   "avg_approval_days": 0.3937,
+   "avg_handling_days": 3.056,
+   "avg_transit_days": 8.4069,
+   "avg_promised_days": 23.0195,
+   "seller_handoff_miss_rate": 0.0786,
+   "active_sellers": 757,
+   "avg_review": 4.1896,
+   "orders_per_active_seller": 5.9155,
+   "throughput_per_week": 1011.1613,
+   "cancel_rate": 0.0181
+  },
+  {
+   "month": "2017-11-01",
+   "orders_placed": 7544,
+   "orders_delivered": 7287,
+   "avg_processing_days": 15.1604,
+   "median_processing_days": 12.6986,
+   "on_time_rate": 0.8759,
+   "delay_rate": 0.1241,
+   "cost_per_order": 22.7206,
+   "freight_share_of_price": 0.1677,
+   "avg_approval_days": 0.4506,
+   "avg_handling_days": 3.6164,
+   "avg_transit_days": 11.0935,
+   "avg_promised_days": 22.5608,
+   "seller_handoff_miss_rate": 0.1287,
+   "active_sellers": 934,
+   "avg_review": 3.975,
+   "orders_per_active_seller": 7.8019,
+   "throughput_per_week": 1700.3,
+   "cancel_rate": 0.016
+  },
+  {
+   "month": "2017-12-01",
+   "orders_placed": 5673,
+   "orders_delivered": 5508,
+   "avg_processing_days": 15.3884,
+   "median_processing_days": 13.1422,
+   "on_time_rate": 0.9257,
+   "delay_rate": 0.0743,
+   "cost_per_order": 21.2337,
+   "freight_share_of_price": 0.1612,
+   "avg_approval_days": 0.4493,
+   "avg_handling_days": 3.2731,
+   "avg_transit_days": 11.6659,
+   "avg_promised_days": 27.684,
+   "seller_handoff_miss_rate": 0.1088,
+   "active_sellers": 842,
+   "avg_review": 4.0703,
+   "orders_per_active_seller": 6.5416,
+   "throughput_per_week": 1243.7419,
+   "cancel_rate": 0.0093
+  },
+  {
+   "month": "2018-01-01",
+   "orders_placed": 7269,
+   "orders_delivered": 7045,
+   "avg_processing_days": 14.0797,
+   "median_processing_days": 11.8321,
+   "on_time_rate": 0.9429,
+   "delay_rate": 0.0571,
+   "cost_per_order": 21.6707,
+   "freight_share_of_price": 0.1656,
+   "avg_approval_days": 0.4174,
+   "avg_handling_days": 3.1856,
+   "avg_transit_days": 10.4768,
+   "avg_promised_days": 26.3022,
+   "seller_handoff_miss_rate": 0.1018,
+   "active_sellers": 948,
+   "avg_review": 4.0931,
+   "orders_per_active_seller": 7.4314,
+   "throughput_per_week": 1590.8065,
+   "cancel_rate": 0.0113
+  },
+  {
+   "month": "2018-02-01",
+   "orders_placed": 6728,
+   "orders_delivered": 6543,
+   "avg_processing_days": 16.9548,
+   "median_processing_days": 14.2728,
+   "on_time_rate": 0.8585,
+   "delay_rate": 0.1415,
+   "cost_per_order": 21.3137,
+   "freight_share_of_price": 0.1692,
+   "avg_approval_days": 0.3998,
+   "avg_handling_days": 3.1662,
+   "avg_transit_days": 13.3888,
+   "avg_promised_days": 24.5272,
+   "seller_handoff_miss_rate": 0.1226,
+   "active_sellers": 926,
+   "avg_review": 3.864,
+   "orders_per_active_seller": 7.0659,
+   "throughput_per_week": 1635.75,
+   "cancel_rate": 0.0153
+  },
+  {
+   "month": "2018-03-01",
+   "orders_placed": 7211,
+   "orders_delivered": 7001,
+   "avg_processing_days": 16.3041,
+   "median_processing_days": 13.3694,
+   "on_time_rate": 0.8103,
+   "delay_rate": 0.1897,
+   "cost_per_order": 23.8845,
+   "freight_share_of_price": 0.1754,
+   "avg_approval_days": 0.3551,
+   "avg_handling_days": 2.979,
+   "avg_transit_days": 12.97,
+   "avg_promised_days": 22.0332,
+   "seller_handoff_miss_rate": 0.0851,
+   "active_sellers": 972,
+   "avg_review": 3.7952,
+   "orders_per_active_seller": 7.2027,
+   "throughput_per_week": 1580.871,
+   "cancel_rate": 0.006
+  },
+  {
+   "month": "2018-04-01",
+   "orders_placed": 6939,
+   "orders_delivered": 6409,
+   "avg_processing_days": 11.631,
+   "median_processing_days": 9.3553,
+   "on_time_rate": 0.953,
+   "delay_rate": 0.047,
+   "cost_per_order": 23.5048,
+   "freight_share_of_price": 0.1632,
+   "avg_approval_days": 0.4899,
+   "avg_handling_days": 2.3864,
+   "avg_transit_days": 8.7548,
+   "avg_promised_days": 23.6348,
+   "seller_handoff_miss_rate": 0.0635,
+   "active_sellers": 1081,
+   "avg_review": 4.1922,
+   "orders_per_active_seller": 5.9288,
+   "throughput_per_week": 1495.4333,
+   "cancel_rate": 0.0029
+  },
+  {
+   "month": "2018-05-01",
+   "orders_placed": 6873,
+   "orders_delivered": 6681,
+   "avg_processing_days": 11.437,
+   "median_processing_days": 9.159,
+   "on_time_rate": 0.9343,
+   "delay_rate": 0.0657,
+   "cost_per_order": 22.3689,
+   "freight_share_of_price": 0.1546,
+   "avg_approval_days": 0.374,
+   "avg_handling_days": 2.335,
+   "avg_transit_days": 8.728,
+   "avg_promised_days": 22.8833,
+   "seller_handoff_miss_rate": 0.0662,
+   "active_sellers": 1092,
+   "avg_review": 4.2271,
+   "orders_per_active_seller": 6.1181,
+   "throughput_per_week": 1508.6129,
+   "cancel_rate": 0.0058
+  },
+  {
+   "month": "2018-06-01",
+   "orders_placed": 6167,
+   "orders_delivered": 5973,
+   "avg_processing_days": 9.2588,
+   "median_processing_days": 7.969,
+   "on_time_rate": 0.9883,
+   "delay_rate": 0.0117,
+   "cost_per_order": 25.5906,
+   "freight_share_of_price": 0.182,
+   "avg_approval_days": 0.34,
+   "avg_handling_days": 2.2464,
+   "avg_transit_days": 6.6724,
+   "avg_promised_days": 27.7718,
+   "seller_handoff_miss_rate": 0.0686,
+   "active_sellers": 1144,
+   "avg_review": 4.3,
+   "orders_per_active_seller": 5.2212,
+   "throughput_per_week": 1393.7,
+   "cancel_rate": 0.0036
+  },
+  {
+   "month": "2018-07-01",
+   "orders_placed": 6292,
+   "orders_delivered": 5593,
+   "avg_processing_days": 9.1674,
+   "median_processing_days": 7.7456,
+   "on_time_rate": 0.9639,
+   "delay_rate": 0.0361,
+   "cost_per_order": 26.1364,
+   "freight_share_of_price": 0.1835,
+   "avg_approval_days": 0.4174,
+   "avg_handling_days": 2.6092,
+   "avg_transit_days": 6.1408,
+   "avg_promised_days": 19.5317,
+   "seller_handoff_miss_rate": 0.0982,
+   "active_sellers": 1196,
+   "avg_review": 4.2948,
+   "orders_per_active_seller": 4.6764,
+   "throughput_per_week": 1262.9355,
+   "cancel_rate": 0.0094
+  },
+  {
+   "month": "2018-08-01",
+   "orders_placed": 6512,
+   "orders_delivered": 6265,
+   "avg_processing_days": 7.7445,
+   "median_processing_days": 7.0198,
+   "on_time_rate": 0.9376,
+   "delay_rate": 0.0624,
+   "cost_per_order": 23.1043,
+   "freight_share_of_price": 0.1747,
+   "avg_approval_days": 0.3419,
+   "avg_handling_days": 2.2031,
+   "avg_transit_days": 5.1995,
+   "avg_promised_days": 15.1635,
+   "seller_handoff_miss_rate": 0.0921,
+   "active_sellers": 1240,
+   "avg_review": 4.3028,
+   "orders_per_active_seller": 5.0524,
+   "throughput_per_week": 1414.6774,
+   "cancel_rate": 0.014
+  }
+ ],
+ "stage_descriptive": [
+  {
+   "stage": "approval",
+   "mean": 0.4,
+   "median": 0.01,
+   "p90": 1.39,
+   "std": 0.8,
+   "skew": 4.47,
+   "late_mean": 0.5,
+   "ontime_mean": 0.39
+  },
+  {
+   "stage": "seller handling",
+   "mean": 2.82,
+   "median": 1.84,
+   "p90": 5.99,
+   "std": 3.4,
+   "skew": 5.11,
+   "late_mean": 5.55,
+   "ontime_mean": 2.62
+  },
+  {
+   "stage": "carrier transit",
+   "mean": 9.37,
+   "median": 7.12,
+   "p90": 18.96,
+   "std": 8.78,
+   "skew": 4.5,
+   "late_mean": 27.89,
+   "ontime_mean": 8.01
+  },
+  {
+   "stage": "total",
+   "mean": 12.6,
+   "median": 10.26,
+   "p90": 23.12,
+   "std": 9.56,
+   "skew": 3.85,
+   "late_mean": 33.94,
+   "ontime_mean": 11.03
+  }
+ ],
+ "root_causes": [
+  {
+   "cause": "Slow carrier transit",
+   "late_orders": 4282,
+   "share_pct": 65.8,
+   "cumulative_pct": 65.8
+  },
+  {
+   "cause": "Seller missed hand-off deadline",
+   "late_orders": 1684,
+   "share_pct": 25.9,
+   "cumulative_pct": 91.7
+  },
+  {
+   "cause": "Payment approval delay",
+   "late_orders": 396,
+   "share_pct": 6.1,
+   "cumulative_pct": 97.8
+  },
+  {
+   "cause": "Promise shorter than the route needs",
+   "late_orders": 82,
+   "share_pct": 1.3,
+   "cumulative_pct": 99.1
+  },
+  {
+   "cause": "Other",
+   "late_orders": 62,
+   "share_pct": 1.0,
+   "cumulative_pct": 100.1
+  }
+ ],
+ "cause_by_month": {
+  "months": [
+   "2017-01",
+   "2017-02",
+   "2017-03",
+   "2017-04",
+   "2017-05",
+   "2017-06",
+   "2017-07",
+   "2017-08",
+   "2017-09",
+   "2017-10",
+   "2017-11",
+   "2017-12",
+   "2018-01",
+   "2018-02",
+   "2018-03",
+   "2018-04",
+   "2018-05",
+   "2018-06",
+   "2018-07",
+   "2018-08"
+  ],
+  "series": {
+   "Slow carrier transit": [
+    16,
+    19,
+    83,
+    96,
+    70,
+    54,
+    84,
+    84,
+    124,
+    94,
+    519,
+    262,
+    261,
+    706,
+    1060,
+    214,
+    296,
+    54,
+    82,
+    104
+   ],
+   "Seller missed hand-off deadline": [
+    5,
+    26,
+    25,
+    41,
+    31,
+    32,
+    19,
+    35,
+    39,
+    72,
+    281,
+    111,
+    123,
+    173,
+    195,
+    56,
+    122,
+    15,
+    89,
+    194
+   ],
+   "Payment approval delay": [
+    1,
+    4,
+    8,
+    13,
+    4,
+    8,
+    5,
+    3,
+    14,
+    16,
+    96,
+    36,
+    18,
+    45,
+    61,
+    22,
+    16,
+    0,
+    9,
+    17
+   ],
+   "Promise shorter than the route needs": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    2,
+    1,
+    2,
+    0,
+    13,
+    63
+   ],
+   "Other": [
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    3,
+    4,
+    8,
+    0,
+    0,
+    2,
+    10,
+    8,
+    3,
+    1,
+    9,
+    13
+   ]
+  }
+ },
+ "seller_curve": [
+  {
+   "sellers_pct": 0.03,
+   "late_pct": 2.64
+  },
+  {
+   "sellers_pct": 0.75,
+   "late_pct": 25.88
+  },
+  {
+   "sellers_pct": 1.47,
+   "late_pct": 35.63
+  },
+  {
+   "sellers_pct": 2.22,
+   "late_pct": 42.56
+  },
+  {
+   "sellers_pct": 2.94,
+   "late_pct": 47.62
+  },
+  {
+   "sellers_pct": 3.69,
+   "late_pct": 52.06
+  },
+  {
+   "sellers_pct": 4.41,
+   "late_pct": 55.81
+  },
+  {
+   "sellers_pct": 5.16,
+   "late_pct": 59.19
+  },
+  {
+   "sellers_pct": 5.88,
+   "late_pct": 62.1
+  },
+  {
+   "sellers_pct": 6.59,
+   "late_pct": 64.62
+  },
+  {
+   "sellers_pct": 7.35,
+   "late_pct": 66.98
+  },
+  {
+   "sellers_pct": 8.06,
+   "late_pct": 68.95
+  },
+  {
+   "sellers_pct": 8.81,
+   "late_pct": 70.98
+  },
+  {
+   "sellers_pct": 9.53,
+   "late_pct": 72.64
+  },
+  {
+   "sellers_pct": 10.28,
+   "late_pct": 74.33
+  },
+  {
+   "sellers_pct": 11.0,
+   "late_pct": 75.67
+  },
+  {
+   "sellers_pct": 11.75,
+   "late_pct": 77.02
+  },
+  {
+   "sellers_pct": 12.47,
+   "late_pct": 78.31
+  },
+  {
+   "sellers_pct": 13.19,
+   "late_pct": 79.56
+  },
+  {
+   "sellers_pct": 13.94,
+   "late_pct": 80.57
+  },
+  {
+   "sellers_pct": 14.66,
+   "late_pct": 81.54
+  },
+  {
+   "sellers_pct": 15.41,
+   "late_pct": 82.55
+  },
+  {
+   "sellers_pct": 16.13,
+   "late_pct": 83.52
+  },
+  {
+   "sellers_pct": 16.88,
+   "late_pct": 84.54
+  },
+  {
+   "sellers_pct": 17.59,
+   "late_pct": 85.23
+  },
+  {
+   "sellers_pct": 18.35,
+   "late_pct": 85.91
+  },
+  {
+   "sellers_pct": 19.06,
+   "late_pct": 86.55
+  },
+  {
+   "sellers_pct": 19.78,
+   "late_pct": 87.2
+  },
+  {
+   "sellers_pct": 20.53,
+   "late_pct": 87.87
+  },
+  {
+   "sellers_pct": 21.25,
+   "late_pct": 88.52
+  },
+  {
+   "sellers_pct": 22.0,
+   "late_pct": 89.19
+  },
+  {
+   "sellers_pct": 22.72,
+   "late_pct": 89.84
+  },
+  {
+   "sellers_pct": 23.47,
+   "late_pct": 90.52
+  },
+  {
+   "sellers_pct": 24.19,
+   "late_pct": 91.16
+  },
+  {
+   "sellers_pct": 24.91,
+   "late_pct": 91.75
+  },
+  {
+   "sellers_pct": 25.66,
+   "late_pct": 92.08
+  },
+  {
+   "sellers_pct": 26.38,
+   "late_pct": 92.41
+  },
+  {
+   "sellers_pct": 27.13,
+   "late_pct": 92.75
+  },
+  {
+   "sellers_pct": 27.84,
+   "late_pct": 93.07
+  },
+  {
+   "sellers_pct": 28.6,
+   "late_pct": 93.41
+  },
+  {
+   "sellers_pct": 29.31,
+   "late_pct": 93.73
+  },
+  {
+   "sellers_pct": 30.06,
+   "late_pct": 94.07
+  },
+  {
+   "sellers_pct": 30.78,
+   "late_pct": 94.39
+  },
+  {
+   "sellers_pct": 31.5,
+   "late_pct": 94.71
+  },
+  {
+   "sellers_pct": 32.25,
+   "late_pct": 95.05
+  },
+  {
+   "sellers_pct": 32.97,
+   "late_pct": 95.37
+  },
+  {
+   "sellers_pct": 33.72,
+   "late_pct": 95.71
+  },
+  {
+   "sellers_pct": 34.44,
+   "late_pct": 96.03
+  },
+  {
+   "sellers_pct": 35.19,
+   "late_pct": 96.37
+  },
+  {
+   "sellers_pct": 35.91,
+   "late_pct": 96.7
+  },
+  {
+   "sellers_pct": 36.66,
+   "late_pct": 97.03
+  },
+  {
+   "sellers_pct": 37.38,
+   "late_pct": 97.36
+  },
+  {
+   "sellers_pct": 38.09,
+   "late_pct": 97.68
+  },
+  {
+   "sellers_pct": 38.85,
+   "late_pct": 98.02
+  },
+  {
+   "sellers_pct": 39.56,
+   "late_pct": 98.34
+  },
+  {
+   "sellers_pct": 40.31,
+   "late_pct": 98.68
+  },
+  {
+   "sellers_pct": 41.03,
+   "late_pct": 99.0
+  },
+  {
+   "sellers_pct": 41.78,
+   "late_pct": 99.34
+  },
+  {
+   "sellers_pct": 42.5,
+   "late_pct": 99.66
+  },
+  {
+   "sellers_pct": 43.25,
+   "late_pct": 100.0
+  }
+ ],
+ "top_sellers": [
+  {
+   "seller": "S-4a3ca9",
+   "orders": 1710,
+   "late_orders": 172,
+   "late_rate": 0.101,
+   "handoff_miss_rate": 0.09,
+   "avg_handling_days": 2.401,
+   "avg_review": 3.86,
+   "seller_state": "SP",
+   "excess_late_orders": 54.7
+  },
+  {
+   "seller": "S-06a2c3",
+   "orders": 369,
+   "late_orders": 74,
+   "late_rate": 0.201,
+   "handoff_miss_rate": 0.328,
+   "avg_handling_days": 4.676,
+   "avg_review": 3.965,
+   "seller_state": "MA",
+   "excess_late_orders": 48.7
+  },
+  {
+   "seller": "S-4869f7",
+   "orders": 1105,
+   "late_orders": 118,
+   "late_rate": 0.107,
+   "handoff_miss_rate": 0.056,
+   "avg_handling_days": 2.381,
+   "avg_review": 4.147,
+   "seller_state": "SP",
+   "excess_late_orders": 42.2
+  },
+  {
+   "seller": "S-1f50f9",
+   "orders": 1376,
+   "late_orders": 124,
+   "late_rate": 0.09,
+   "handoff_miss_rate": 0.109,
+   "avg_handling_days": 3.473,
+   "avg_review": 4.144,
+   "seller_state": "SP",
+   "excess_late_orders": 29.6
+  },
+  {
+   "seller": "S-7d13fc",
+   "orders": 546,
+   "late_orders": 64,
+   "late_rate": 0.117,
+   "handoff_miss_rate": 0.152,
+   "avg_handling_days": 3.516,
+   "avg_review": 4.038,
+   "seller_state": "SP",
+   "excess_late_orders": 26.5
+  },
+  {
+   "seller": "S-816025",
+   "orders": 365,
+   "late_orders": 51,
+   "late_rate": 0.14,
+   "handoff_miss_rate": 0.247,
+   "avg_handling_days": 3.669,
+   "avg_review": 3.973,
+   "seller_state": "SP",
+   "excess_late_orders": 26.0
+  },
+  {
+   "seller": "S-88460e",
+   "orders": 235,
+   "late_orders": 42,
+   "late_rate": 0.179,
+   "handoff_miss_rate": 0.498,
+   "avg_handling_days": 7.739,
+   "avg_review": 3.417,
+   "seller_state": "PR",
+   "excess_late_orders": 25.9
+  },
+  {
+   "seller": "S-7c67e1",
+   "orders": 966,
+   "late_orders": 89,
+   "late_rate": 0.092,
+   "handoff_miss_rate": 0.298,
+   "avg_handling_days": 11.426,
+   "avg_review": 3.5,
+   "seller_state": "SP",
+   "excess_late_orders": 22.7
+  },
+  {
+   "seller": "S-ea8482",
+   "orders": 1100,
+   "late_orders": 96,
+   "late_rate": 0.087,
+   "handoff_miss_rate": 0.079,
+   "avg_handling_days": 2.967,
+   "avg_review": 4.025,
+   "seller_state": "SP",
+   "excess_late_orders": 20.5
+  },
+  {
+   "seller": "S-e5a343",
+   "orders": 214,
+   "late_orders": 34,
+   "late_rate": 0.159,
+   "handoff_miss_rate": 0.178,
+   "avg_handling_days": 3.368,
+   "avg_review": 3.995,
+   "seller_state": "SP",
+   "excess_late_orders": 19.3
+  },
+  {
+   "seller": "S-8b321b",
+   "orders": 914,
+   "late_orders": 81,
+   "late_rate": 0.089,
+   "handoff_miss_rate": 0.048,
+   "avg_handling_days": 2.042,
+   "avg_review": 4.106,
+   "seller_state": "SP",
+   "excess_late_orders": 18.3
+  },
+  {
+   "seller": "S-855668",
+   "orders": 296,
+   "late_orders": 38,
+   "late_rate": 0.128,
+   "handoff_miss_rate": 0.186,
+   "avg_handling_days": 5.893,
+   "avg_review": 3.841,
+   "seller_state": "SP",
+   "excess_late_orders": 17.7
+  },
+  {
+   "seller": "S-54965b",
+   "orders": 70,
+   "late_orders": 22,
+   "late_rate": 0.314,
+   "handoff_miss_rate": 0.557,
+   "avg_handling_days": 15.521,
+   "avg_review": 3.0,
+   "seller_state": "PR",
+   "excess_late_orders": 17.2
+  },
+  {
+   "seller": "S-1835b5",
+   "orders": 382,
+   "late_orders": 43,
+   "late_rate": 0.113,
+   "handoff_miss_rate": 0.026,
+   "avg_handling_days": 1.687,
+   "avg_review": 3.678,
+   "seller_state": "SP",
+   "excess_late_orders": 16.8
+  },
+  {
+   "seller": "S-620c87",
+   "orders": 692,
+   "late_orders": 63,
+   "late_rate": 0.091,
+   "handoff_miss_rate": 0.069,
+   "avg_handling_days": 2.162,
+   "avg_review": 4.286,
+   "seller_state": "RJ",
+   "excess_late_orders": 15.5
+  }
+ ],
+ "regions": [
+  {
+   "region": "Northeast",
+   "orders": 8888,
+   "delay_rate_pct": 12.85,
+   "avg_processing_days": 20.05,
+   "avg_handling_days": 2.9,
+   "avg_transit_days": 16.7,
+   "cost_per_order": 35.96,
+   "avg_review": 3.95
+  },
+  {
+   "region": "North",
+   "orders": 1771,
+   "delay_rate_pct": 8.58,
+   "avg_processing_days": 22.65,
+   "avg_handling_days": 2.85,
+   "avg_transit_days": 19.3,
+   "cost_per_order": 41.35,
+   "avg_review": 4.02
+  },
+  {
+   "region": "Centre-West",
+   "orders": 5515,
+   "delay_rate_pct": 6.62,
+   "avg_processing_days": 15.09,
+   "avg_handling_days": 2.72,
+   "avg_transit_days": 11.92,
+   "cost_per_order": 26.41,
+   "avg_review": 4.11
+  },
+  {
+   "region": "Southeast",
+   "orders": 65097,
+   "delay_rate_pct": 6.19,
+   "avg_processing_days": 10.78,
+   "avg_handling_days": 2.83,
+   "avg_transit_days": 7.58,
+   "cost_per_order": 19.83,
+   "avg_review": 4.16
+  },
+  {
+   "region": "South",
+   "orders": 13548,
+   "delay_rate_pct": 6.02,
+   "avg_processing_days": 14.1,
+   "avg_handling_days": 2.8,
+   "avg_transit_days": 10.86,
+   "cost_per_order": 24.33,
+   "avg_review": 4.18
+  }
+ ],
+ "states": [
+  {
+   "state": "AL",
+   "orders": 392,
+   "delay_rate_pct": 21.17,
+   "avg_processing_days": 24.36,
+   "avg_handling_days": 2.99,
+   "avg_transit_days": 20.91,
+   "cost_per_order": 38.68,
+   "avg_review": 3.84
+  },
+  {
+   "state": "MA",
+   "orders": 700,
+   "delay_rate_pct": 17.86,
+   "avg_processing_days": 21.64,
+   "avg_handling_days": 3.02,
+   "avg_transit_days": 18.06,
+   "cost_per_order": 42.9,
+   "avg_review": 3.82
+  },
+  {
+   "state": "SE",
+   "orders": 330,
+   "delay_rate_pct": 15.45,
+   "avg_processing_days": 21.51,
+   "avg_handling_days": 3.02,
+   "avg_transit_days": 18.07,
+   "cost_per_order": 41.1,
+   "avg_review": 3.89
+  },
+  {
+   "state": "PI",
+   "orders": 468,
+   "delay_rate_pct": 14.1,
+   "avg_processing_days": 19.57,
+   "avg_handling_days": 2.78,
+   "avg_transit_days": 16.37,
+   "cost_per_order": 42.99,
+   "avg_review": 3.99
+  },
+  {
+   "state": "CE",
+   "orders": 1253,
+   "delay_rate_pct": 14.05,
+   "avg_processing_days": 21.37,
+   "avg_handling_days": 2.87,
+   "avg_transit_days": 18.06,
+   "cost_per_order": 36.47,
+   "avg_review": 3.93
+  },
+  {
+   "state": "RJ",
+   "orders": 12171,
+   "delay_rate_pct": 12.26,
+   "avg_processing_days": 15.36,
+   "avg_handling_days": 2.92,
+   "avg_transit_days": 12.08,
+   "cost_per_order": 23.94,
+   "avg_review": 3.94
+  },
+  {
+   "state": "BA",
+   "orders": 3207,
+   "delay_rate_pct": 12.19,
+   "avg_processing_days": 19.38,
+   "avg_handling_days": 2.86,
+   "avg_transit_days": 16.06,
+   "cost_per_order": 29.96,
+   "avg_review": 3.91
+  },
+  {
+   "state": "PA",
+   "orders": 932,
+   "delay_rate_pct": 11.16,
+   "avg_processing_days": 23.79,
+   "avg_handling_days": 2.99,
+   "avg_transit_days": 20.33,
+   "cost_per_order": 39.73,
+   "avg_review": 3.89
+  },
+  {
+   "state": "ES",
+   "orders": 1965,
+   "delay_rate_pct": 10.84,
+   "avg_processing_days": 15.83,
+   "avg_handling_days": 2.98,
+   "avg_transit_days": 12.44,
+   "cost_per_order": 24.47,
+   "avg_review": 4.05
+  },
+  {
+   "state": "PB",
+   "orders": 508,
+   "delay_rate_pct": 10.43,
+   "avg_processing_days": 20.48,
+   "avg_handling_days": 2.98,
+   "avg_transit_days": 16.96,
+   "cost_per_order": 48.53,
+   "avg_review": 4.06
+  },
+  {
+   "state": "MS",
+   "orders": 696,
+   "delay_rate_pct": 9.77,
+   "avg_processing_days": 15.66,
+   "avg_handling_days": 2.75,
+   "avg_transit_days": 12.48,
+   "cost_per_order": 27.07,
+   "avg_review": 4.16
+  },
+  {
+   "state": "PE",
+   "orders": 1567,
+   "delay_rate_pct": 9.76,
+   "avg_processing_days": 18.53,
+   "avg_handling_days": 2.86,
+   "avg_transit_days": 15.25,
+   "cost_per_order": 35.81,
+   "avg_review": 4.06
+  },
+  {
+   "state": "RN",
+   "orders": 463,
+   "delay_rate_pct": 9.5,
+   "avg_processing_days": 19.24,
+   "avg_handling_days": 3.06,
+   "avg_transit_days": 15.76,
+   "cost_per_order": 39.21,
+   "avg_review": 4.13
+  },
+  {
+   "state": "SC",
+   "orders": 3483,
+   "delay_rate_pct": 8.35,
+   "avg_processing_days": 15.03,
+   "avg_handling_days": 2.89,
+   "avg_transit_days": 11.7,
+   "cost_per_order": 24.85,
+   "avg_review": 4.11
+  },
+  {
+   "state": "GO",
+   "orders": 1914,
+   "delay_rate_pct": 6.58,
+   "avg_processing_days": 15.68,
+   "avg_handling_days": 2.68,
+   "avg_transit_days": 12.5,
+   "cost_per_order": 26.25,
+   "avg_review": 4.08
+  },
+  {
+   "state": "RS",
+   "orders": 5243,
+   "delay_rate_pct": 6.2,
+   "avg_processing_days": 15.37,
+   "avg_handling_days": 2.76,
+   "avg_transit_days": 12.15,
+   "cost_per_order": 24.75,
+   "avg_review": 4.18
+  },
+  {
+   "state": "MT",
+   "orders": 870,
+   "delay_rate_pct": 6.09,
+   "avg_processing_days": 18.18,
+   "avg_handling_days": 2.65,
+   "avg_transit_days": 15.0,
+   "cost_per_order": 32.42,
+   "avg_review": 4.12
+  },
+  {
+   "state": "DF",
+   "orders": 2035,
+   "delay_rate_pct": 5.8,
+   "avg_processing_days": 13.02,
+   "avg_handling_days": 2.77,
+   "avg_transit_days": 9.87,
+   "cost_per_order": 23.78,
+   "avg_review": 4.12
+  },
+  {
+   "state": "MG",
+   "orders": 11152,
+   "delay_rate_pct": 4.64,
+   "avg_processing_days": 12.05,
+   "avg_handling_days": 2.84,
+   "avg_transit_days": 8.82,
+   "cost_per_order": 23.5,
+   "avg_review": 4.18
+  },
+  {
+   "state": "SP",
+   "orders": 39809,
+   "delay_rate_pct": 4.55,
+   "avg_processing_days": 8.78,
+   "avg_handling_days": 2.79,
+   "avg_transit_days": 5.62,
+   "cost_per_order": 17.32,
+   "avg_review": 4.23
+  },
+  {
+   "state": "PR",
+   "orders": 4822,
+   "delay_rate_pct": 4.13,
+   "avg_processing_days": 12.05,
+   "avg_handling_days": 2.79,
+   "avg_transit_days": 8.84,
+   "cost_per_order": 23.48,
+   "avg_review": 4.23
+  }
+ ],
+ "categories": [
+  {
+   "category": "bed_bath_table",
+   "orders": 9021,
+   "delay_rate_pct": 7.62,
+   "avg_processing_days": 13.1,
+   "avg_handling_days": 2.82,
+   "avg_transit_days": 9.93,
+   "cost_per_order": 21.95,
+   "avg_review": 3.99
+  },
+  {
+   "category": "health_beauty",
+   "orders": 8421,
+   "delay_rate_pct": 7.65,
+   "avg_processing_days": 12.12,
+   "avg_handling_days": 2.64,
+   "avg_transit_days": 9.08,
+   "cost_per_order": 20.72,
+   "avg_review": 4.22
+  },
+  {
+   "category": "sports_leisure",
+   "orders": 7390,
+   "delay_rate_pct": 6.68,
+   "avg_processing_days": 12.29,
+   "avg_handling_days": 2.37,
+   "avg_transit_days": 9.55,
+   "cost_per_order": 21.74,
+   "avg_review": 4.22
+  },
+  {
+   "category": "computers_accessories",
+   "orders": 6401,
+   "delay_rate_pct": 6.48,
+   "avg_processing_days": 13.24,
+   "avg_handling_days": 3.15,
+   "avg_transit_days": 9.64,
+   "cost_per_order": 22.08,
+   "avg_review": 4.07
+  },
+  {
+   "category": "furniture_decor",
+   "orders": 6091,
+   "delay_rate_pct": 7.29,
+   "avg_processing_days": 13.12,
+   "avg_handling_days": 3.24,
+   "avg_transit_days": 9.44,
+   "cost_per_order": 27.15,
+   "avg_review": 4.06
+  },
+  {
+   "category": "housewares",
+   "orders": 5574,
+   "delay_rate_pct": 5.49,
+   "avg_processing_days": 11.16,
+   "avg_handling_days": 2.71,
+   "avg_transit_days": 8.08,
+   "cost_per_order": 25.03,
+   "avg_review": 4.19
+  },
+  {
+   "category": "watches_gifts",
+   "orders": 5370,
+   "delay_rate_pct": 7.52,
+   "avg_processing_days": 12.89,
+   "avg_handling_days": 2.53,
+   "avg_transit_days": 9.98,
+   "cost_per_order": 17.94,
+   "avg_review": 4.11
+  },
+  {
+   "category": "telephony",
+   "orders": 4021,
+   "delay_rate_pct": 7.21,
+   "avg_processing_days": 13.0,
+   "avg_handling_days": 3.03,
+   "avg_transit_days": 9.49,
+   "cost_per_order": 16.98,
+   "avg_review": 4.05
+  },
+  {
+   "category": "auto",
+   "orders": 3723,
+   "delay_rate_pct": 7.44,
+   "avg_processing_days": 12.39,
+   "avg_handling_days": 2.5,
+   "avg_transit_days": 9.47,
+   "cost_per_order": 23.9,
+   "avg_review": 4.14
+  },
+  {
+   "category": "toys",
+   "orders": 3703,
+   "delay_rate_pct": 6.43,
+   "avg_processing_days": 11.76,
+   "avg_handling_days": 2.42,
+   "avg_transit_days": 9.0,
+   "cost_per_order": 20.07,
+   "avg_review": 4.22
+  },
+  {
+   "category": "cool_stuff",
+   "orders": 3483,
+   "delay_rate_pct": 5.94,
+   "avg_processing_days": 12.4,
+   "avg_handling_days": 2.47,
+   "avg_transit_days": 9.53,
+   "cost_per_order": 23.15,
+   "avg_review": 4.21
+  },
+  {
+   "category": "garden_tools",
+   "orders": 3362,
+   "delay_rate_pct": 6.66,
+   "avg_processing_days": 13.75,
+   "avg_handling_days": 2.66,
+   "avg_transit_days": 10.63,
+   "cost_per_order": 28.32,
+   "avg_review": 4.18
+  }
+ ],
+ "routes": [
+  {
+   "route": "SP -> SP",
+   "orders": 30231,
+   "late_orders": 1424,
+   "delay_pct": 4.7,
+   "avg_transit_days": 4.8,
+   "avg_distance_km": 150.0
+  },
+  {
+   "route": "SP -> RJ",
+   "orders": 8047,
+   "late_orders": 1149,
+   "delay_pct": 14.3,
+   "avg_transit_days": 13.0,
+   "avg_distance_km": 441.0
+  },
+  {
+   "route": "SP -> MG",
+   "orders": 7322,
+   "late_orders": 393,
+   "delay_pct": 5.4,
+   "avg_transit_days": 9.1,
+   "avg_distance_km": 495.0
+  },
+  {
+   "route": "SP -> BA",
+   "orders": 2276,
+   "late_orders": 293,
+   "delay_pct": 12.9,
+   "avg_transit_days": 16.5,
+   "avg_distance_km": 1388.0
+  },
+  {
+   "route": "SP -> RS",
+   "orders": 3524,
+   "late_orders": 238,
+   "delay_pct": 6.8,
+   "avg_transit_days": 13.0,
+   "avg_distance_km": 906.0
+  },
+  {
+   "route": "SP -> SC",
+   "orders": 2285,
+   "late_orders": 222,
+   "delay_pct": 9.7,
+   "avg_transit_days": 12.6,
+   "avg_distance_km": 561.0
+  },
+  {
+   "route": "SP -> ES",
+   "orders": 1444,
+   "late_orders": 179,
+   "delay_pct": 12.4,
+   "avg_transit_days": 12.5,
+   "avg_distance_km": 787.0
+  },
+  {
+   "route": "SP -> PR",
+   "orders": 3054,
+   "late_orders": 138,
+   "delay_pct": 4.5,
+   "avg_transit_days": 9.6,
+   "avg_distance_km": 463.0
+  },
+  {
+   "route": "SP -> CE",
+   "orders": 950,
+   "late_orders": 133,
+   "delay_pct": 14.0,
+   "avg_transit_days": 18.0,
+   "avg_distance_km": 2258.0
+  },
+  {
+   "route": "PR -> RJ",
+   "orders": 950,
+   "late_orders": 117,
+   "delay_pct": 12.3,
+   "avg_transit_days": 13.9,
+   "avg_distance_km": 842.0
+  }
+ ],
+ "tests": [
+  {
+   "hypothesis": "Late orders get lower review scores",
+   "test": "Mann-Whitney U (one-sided)",
+   "result": "mean 2.25 late vs 4.28 on time",
+   "p_value": 0.0,
+   "conclusion": "Supported"
+  },
+  {
+   "hypothesis": "Orders handed to the carrier after the seller deadline are more often late",
+   "test": "Chi-square test of independence",
+   "result": "21.2% late vs 5.4% (3.9x)",
+   "p_value": 0.0,
+   "conclusion": "Supported"
+  },
+  {
+   "hypothesis": "The Black Friday peak (20 Nov - 3 Dec 2017) caused more delays than the rest of Q4",
+   "test": "Chi-square test of independence",
+   "result": "16.4% late vs 5.8% in the rest of Q4 2017",
+   "p_value": 3.5398832804848037e-107,
+   "conclusion": "Supported"
+  },
+  {
+   "hypothesis": "Delivery time differs between customer regions",
+   "test": "Kruskal-Wallis H",
+   "result": "median 8.8 days (Southeast) to 20.2 days (North)",
+   "p_value": 0.0,
+   "conclusion": "Supported"
+  },
+  {
+   "hypothesis": "Longer seller handling goes with more days late",
+   "test": "Spearman rank correlation",
+   "result": "rho = 0.13",
+   "p_value": 0.0,
+   "conclusion": "Supported"
+  }
+ ],
+ "regression_time": [
+  {
+   "factor": "Customer region: Centre-West",
+   "coef": 1.3741,
+   "ci_low": 1.1474,
+   "ci_high": 1.6009,
+   "p_value": 0.0
+  },
+  {
+   "factor": "Customer region: North",
+   "coef": 1.2914,
+   "ci_low": 0.6636,
+   "ci_high": 1.9193,
+   "p_value": 0.0001
+  },
+  {
+   "factor": "Customer region: Northeast",
+   "coef": 1.1088,
+   "ci_low": 0.784,
+   "ci_high": 1.4337,
+   "p_value": 0.0
+  },
+  {
+   "factor": "Customer region: South",
+   "coef": 1.6408,
+   "ci_low": 1.5013,
+   "ci_high": 1.7804,
+   "p_value": 0.0
+  },
+  {
+   "factor": "Distance (per 1,000 km)",
+   "coef": 5.6973,
+   "ci_low": 5.5424,
+   "ci_high": 5.8523,
+   "p_value": 0.0
+  },
+  {
+   "factor": "Weight (per kg)",
+   "coef": 0.0597,
+   "ci_low": 0.0482,
+   "ci_high": 0.0713,
+   "p_value": 0.0
+  },
+  {
+   "factor": "Items in the order",
+   "coef": -0.5568,
+   "ci_low": -0.6386,
+   "ci_high": -0.4751,
+   "p_value": 0.0
+  },
+  {
+   "factor": "Seller handling (per day)",
+   "coef": 1.0267,
+   "ci_low": 1.0083,
+   "ci_high": 1.0452,
+   "p_value": 0.0
+  },
+  {
+   "factor": "Black Friday weeks",
+   "coef": 3.9588,
+   "ci_low": 3.6672,
+   "ci_high": 4.2504,
+   "p_value": 0.0
+  },
+  {
+   "factor": "Feb-Mar 2018",
+   "coef": 4.6234,
+   "ci_low": 4.4396,
+   "ci_high": 4.8071,
+   "p_value": 0.0
+  }
+ ],
+ "regression_cost": [
+  {
+   "factor": "Customer region: Centre-West",
+   "coef": 0.4072,
+   "ci_low": -0.0177,
+   "ci_high": 0.8321,
+   "p_value": 0.0604
+  },
+  {
+   "factor": "Customer region: North",
+   "coef": -1.1132,
+   "ci_low": -2.3209,
+   "ci_high": 0.0946,
+   "p_value": 0.0708
+  },
+  {
+   "factor": "Customer region: Northeast",
+   "coef": -0.6759,
+   "ci_low": -1.2423,
+   "ci_high": -0.1095,
+   "p_value": 0.0193
+  },
+  {
+   "factor": "Customer region: South",
+   "coef": 0.8145,
+   "ci_low": 0.576,
+   "ci_high": 1.053,
+   "p_value": 0.0
+  },
+  {
+   "factor": "Distance (per 1,000 km)",
+   "coef": 12.166,
+   "ci_low": 11.8675,
+   "ci_high": 12.4645,
+   "p_value": 0.0
+  },
+  {
+   "factor": "Weight (per kg)",
+   "coef": 1.6299,
+   "ci_low": 1.5082,
+   "ci_high": 1.7515,
+   "p_value": 0.0
+  },
+  {
+   "factor": "Volume (per litre)",
+   "coef": 0.188,
+   "ci_low": 0.1526,
+   "ci_high": 0.2235,
+   "p_value": 0.0
+  },
+  {
+   "factor": "Items in the order",
+   "coef": 11.2338,
+   "ci_low": 10.6048,
+   "ci_high": 11.8629,
+   "p_value": 0.0
+  },
+  {
+   "factor": "Sellers in the order",
+   "coef": 3.6259,
+   "ci_low": 2.0352,
+   "ci_high": 5.2166,
+   "p_value": 0.0
+  }
+ ],
+ "histogram": {
+  "bins": [
+   "0-3",
+   "3-6",
+   "6-9",
+   "9-12",
+   "12-15",
+   "15-18",
+   "18-21",
+   "21-24",
+   "24-27",
+   "27-30",
+   "30-33",
+   "33-36",
+   "36-39",
+   "39-42",
+   "42-45",
+   "45-48",
+   "48-51",
+   "51-54",
+   "54-57",
+   "57-60"
+  ],
+  "On time": [
+   5.19,
+   15.99,
+   23.35,
+   18.57,
+   14.24,
+   8.91,
+   6.1,
+   3.57,
+   1.99,
+   1.05,
+   0.52,
+   0.28,
+   0.11,
+   0.06,
+   0.03,
+   0.02,
+   0.01,
+   0.01,
+   0.01,
+   0.0
+  ],
+  "Late": [
+   0.0,
+   0.46,
+   1.8,
+   1.81,
+   2.72,
+   3.15,
+   4.01,
+   8.95,
+   10.41,
+   11.85,
+   10.18,
+   9.81,
+   7.56,
+   6.41,
+   4.96,
+   4.12,
+   2.8,
+   1.8,
+   1.54,
+   5.67
+  ]
+ },
+ "correlations": {
+  "cols": [
+   "total_days",
+   "handling_days",
+   "transit_days",
+   "approval_days",
+   "distance_km",
+   "weight_kg",
+   "freight",
+   "items",
+   "promised_days",
+   "review_score"
+  ],
+  "values": [
+   [
+    1.0,
+    0.38,
+    0.89,
+    0.1,
+    0.54,
+    0.09,
+    0.38,
+    -0.02,
+    0.52,
+    -0.24
+   ],
+   [
+    0.38,
+    1.0,
+    0.04,
+    -0.06,
+    0.02,
+    0.07,
+    0.04,
+    0.02,
+    0.13,
+    -0.1
+   ],
+   [
+    0.89,
+    0.04,
+    1.0,
+    0.02,
+    0.62,
+    0.06,
+    0.41,
+    -0.04,
+    0.52,
+    -0.2
+   ],
+   [
+    0.1,
+    -0.06,
+    0.02,
+    1.0,
+    0.02,
+    0.0,
+    0.03,
+    0.02,
+    0.01,
+    -0.01
+   ],
+   [
+    0.54,
+    0.02,
+    0.62,
+    0.02,
+    1.0,
+    0.03,
+    0.58,
+    -0.01,
+    0.62,
+    -0.06
+   ],
+   [
+    0.09,
+    0.07,
+    0.06,
+    0.0,
+    0.03,
+    1.0,
+    0.49,
+    0.18,
+    0.08,
+    -0.03
+   ],
+   [
+    0.38,
+    0.04,
+    0.41,
+    0.03,
+    0.58,
+    0.49,
+    1.0,
+    0.38,
+    0.46,
+    -0.09
+   ],
+   [
+    -0.02,
+    0.02,
+    -0.04,
+    0.02,
+    -0.01,
+    0.18,
+    0.38,
+    1.0,
+    0.01,
+    -0.11
+   ],
+   [
+    0.52,
+    0.13,
+    0.52,
+    0.01,
+    0.62,
+    0.08,
+    0.46,
+    0.01,
+    1.0,
+    -0.05
+   ],
+   [
+    -0.24,
+    -0.1,
+    -0.2,
+    -0.01,
+    -0.06,
+    -0.03,
+    -0.09,
+    -0.11,
+    -0.05,
+    1.0
+   ]
+  ]
+ }
+}

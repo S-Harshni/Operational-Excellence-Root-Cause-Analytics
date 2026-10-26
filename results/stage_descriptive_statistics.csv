@@ -1,0 +1,5 @@
+,mean,median,p90,std,skew,late_mean,ontime_mean
+approval,0.4,0.01,1.39,0.8,4.47,0.5,0.39
+seller handling,2.82,1.84,5.99,3.4,5.11,5.55,2.62
+carrier transit,9.37,7.12,18.96,8.78,4.5,27.89,8.01
+total,12.6,10.26,23.12,9.56,3.85,33.94,11.03

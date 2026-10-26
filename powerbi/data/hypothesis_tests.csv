@@ -1,0 +1,6 @@
+hypothesis,test,result,p_value,conclusion
+Late orders get lower review scores,Mann-Whitney U (one-sided),mean 2.25 late vs 4.28 on time,0.0,Supported
+Orders handed to the carrier after the seller deadline are more often late,Chi-square test of independence,21.2% late vs 5.4% (3.9x),0.0,Supported
+The Black Friday peak (20 Nov - 3 Dec 2017) caused more delays than the rest of Q4,Chi-square test of independence,16.4% late vs 5.8% in the rest of Q4 2017,3.5398832804848037e-107,Supported
+Delivery time differs between customer regions,Kruskal-Wallis H,median 8.8 days (Southeast) to 20.2 days (North),0.0,Supported
+Longer seller handling goes with more days late,Spearman rank correlation,rho = 0.13,0.0,Supported

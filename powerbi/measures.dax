@@ -1,0 +1,47 @@
+// ===== Operations Root Cause Analytics: DAX measures =====
+// Tables: fact_orders, dim_seller, monthly_kpis, root_cause_pareto, hypothesis_tests, regression_coefficients, dim_date
+// Relationships: dim_seller[seller_key] 1-* fact_orders[seller_key]; dim_date[Date] 1-* fact_orders[order_date]
+
+// ---------- Core KPIs ----------
+Orders = COUNTROWS ( fact_orders )
+Late Orders = CALCULATE ( [Orders], fact_orders[is_late] = 1 )
+Delay Rate % = DIVIDE ( [Late Orders], [Orders] )
+On-Time Completion % = 1 - [Delay Rate %]
+Avg Processing Days = AVERAGE ( fact_orders[total_days] )
+Median Processing Days = MEDIAN ( fact_orders[total_days] )
+Avg Promised Days = AVERAGE ( fact_orders[promised_days] )
+Cost per Transaction = AVERAGE ( fact_orders[freight] )
+Total Freight Cost = SUM ( fact_orders[freight] )
+Freight Share of Value % = DIVIDE ( [Total Freight Cost], SUM ( fact_orders[price] ) )
+Avg Review = AVERAGE ( fact_orders[review_score] )
+
+// ---------- Throughput & productivity ----------
+Weeks in Period = DIVIDE ( DATEDIFF ( MIN ( fact_orders[order_date] ), MAX ( fact_orders[order_date] ), DAY ) + 1, 7 )
+Throughput per Week = DIVIDE ( [Orders], [Weeks in Period] )
+Active Sellers = DISTINCTCOUNT ( fact_orders[seller_key] )
+Orders per Active Seller = DIVIDE ( [Orders], [Active Sellers] )
+
+// ---------- Process stages ----------
+Avg Approval Days = AVERAGE ( fact_orders[approval_hours] ) / 24
+Avg Seller Handling Days = AVERAGE ( fact_orders[handling_days] )
+Avg Carrier Transit Days = AVERAGE ( fact_orders[transit_days] )
+Transit Share of Time % = DIVIDE ( [Avg Carrier Transit Days], [Avg Approval Days] + [Avg Seller Handling Days] + [Avg Carrier Transit Days] )
+Extra Transit Days (Late) =
+    CALCULATE ( [Avg Carrier Transit Days], fact_orders[is_late] = 1 )
+        - CALCULATE ( [Avg Carrier Transit Days], fact_orders[is_late] = 0 )
+Extra Handling Days (Late) =
+    CALCULATE ( [Avg Seller Handling Days], fact_orders[is_late] = 1 )
+        - CALCULATE ( [Avg Seller Handling Days], fact_orders[is_late] = 0 )
+Hand-off Miss Rate % = AVERAGE ( fact_orders[seller_missed_handoff] )
+
+// ---------- Root causes ----------
+Late Orders by Cause = CALCULATE ( [Late Orders], fact_orders[root_cause] <> "On time" )
+Cause Share % = DIVIDE ( [Late Orders by Cause], CALCULATE ( [Late Orders by Cause], ALL ( fact_orders[root_cause] ) ) )
+Cause Rank = RANKX ( ALL ( fact_orders[root_cause] ), [Late Orders by Cause], , DESC, DENSE )
+Cumulative Cause Share % =
+    VAR r = [Cause Rank]
+    RETURN DIVIDE (
+        CALCULATE ( [Late Orders by Cause], FILTER ( ALL ( fact_orders[root_cause] ), [Cause Rank] <= r ) ),
+        CALCULATE ( [Late Orders by Cause], ALL ( fact_orders[root_cause] ) ) )
+Excess Late Orders =
+    [Late Orders] - [Orders] * CALCULATE ( [Delay Rate %], ALL ( fact_orders ) )

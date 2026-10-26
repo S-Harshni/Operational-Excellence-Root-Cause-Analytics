@@ -1,0 +1,174 @@
+{
+  "headline": {
+    "orders_analysed": 94819,
+    "avg_processing_days": 12.6,
+    "median_processing_days": 10.26,
+    "on_time_rate_pct": 93.1,
+    "delay_rate_pct": 6.86,
+    "cost_per_order": 22.77,
+    "freight_share_pct": 16.6,
+    "throughput_per_week": 1104.0,
+    "sellers": 2927,
+    "late_orders": 6506,
+    "share_of_time": {
+      "approval": 3.2,
+      "seller handling": 22.4,
+      "carrier transit": 74.4
+    },
+    "share_of_extra_days": {
+      "approval": 0.5,
+      "seller handling": 12.8,
+      "carrier transit": 86.7
+    },
+    "extra_days": {
+      "approval": 0.11,
+      "seller handling": 2.93,
+      "carrier transit": 19.88
+    },
+    "top_cause": "Slow carrier transit",
+    "top_cause_pct": 65.8,
+    "second_cause": "Seller missed hand-off deadline",
+    "second_cause_pct": 25.9,
+    "top_two_causes_pct": 91.7,
+    "concentration": {
+      "seller_id": {
+        "groups": 2927,
+        "groups_with_late_orders": 1266,
+        "groups_for_80pct_of_late": 396,
+        "share_of_groups_pct": 13.5
+      },
+      "route": {
+        "groups": 407,
+        "groups_with_late_orders": 210,
+        "groups_for_80pct_of_late": 21,
+        "share_of_groups_pct": 5.2
+      },
+      "category": {
+        "groups": 74,
+        "groups_with_late_orders": 67,
+        "groups_for_80pct_of_late": 15,
+        "share_of_groups_pct": 20.3
+      },
+      "customer_state": {
+        "groups": 27,
+        "groups_with_late_orders": 27,
+        "groups_for_80pct_of_late": 8,
+        "share_of_groups_pct": 29.6
+      }
+    },
+    "time_r2": 0.337,
+    "cost_r2": 0.628,
+    "cost_decomposition": {
+      "cost_per_order_jan_jun_2017": 21.79,
+      "cost_per_order_mar_aug_2018": 24.02,
+      "change_pct": 10.3,
+      "explained_by_order_mix": -1.48,
+      "unexplained_rate_change": 3.72,
+      "avg_weight_kg": [
+        2.56,
+        2.29
+      ],
+      "avg_distance_km": [
+        634.0,
+        571.0
+      ],
+      "avg_items": [
+        1.128,
+        1.144
+      ]
+    },
+    "worst_region": "Northeast",
+    "worst_region_delay_pct": 12.85,
+    "best_region": "South",
+    "best_region_delay_pct": 6.02,
+    "peak_delay_month": "2018-03-01",
+    "peak_delay_rate_pct": 19.0,
+    "review_late": 2.25,
+    "review_ontime": 4.28
+  },
+  "quality": {
+    "orders_in_source": 99441,
+    "products_without_category": 610,
+    "items_without_weight": 18,
+    "impossible_distances_removed": 4,
+    "orders_without_distance": 1270,
+    "duplicate_reviews_removed": 559,
+    "orders_not_delivered": 2963,
+    "cancelled_or_unavailable": 1234,
+    "delivered_missing_a_date": 23,
+    "carrier_date_before_approval": 1350,
+    "delivered_before_carrier_pickup": 23,
+    "orders_without_items": 775,
+    "orders_outside_jan2017_aug2018": 349,
+    "delivered_orders_analysed": 94819
+  },
+  "tests": [
+    {
+      "hypothesis": "Late orders get lower review scores",
+      "test": "Mann-Whitney U (one-sided)",
+      "result": "mean 2.25 late vs 4.28 on time",
+      "p_value": 0.0,
+      "conclusion": "Supported"
+    },
+    {
+      "hypothesis": "Orders handed to the carrier after the seller deadline are more often late",
+      "test": "Chi-square test of independence",
+      "result": "21.2% late vs 5.4% (3.9x)",
+      "p_value": 0.0,
+      "conclusion": "Supported"
+    },
+    {
+      "hypothesis": "The Black Friday peak (20 Nov - 3 Dec 2017) caused more delays than the rest of Q4",
+      "test": "Chi-square test of independence",
+      "result": "16.4% late vs 5.8% in the rest of Q4 2017",
+      "p_value": 3.5398832804848037e-107,
+      "conclusion": "Supported"
+    },
+    {
+      "hypothesis": "Delivery time differs between customer regions",
+      "test": "Kruskal-Wallis H",
+      "result": "median 8.8 days (Southeast) to 20.2 days (North)",
+      "p_value": 0.0,
+      "conclusion": "Supported"
+    },
+    {
+      "hypothesis": "Longer seller handling goes with more days late",
+      "test": "Spearman rank correlation",
+      "result": "rho = 0.13",
+      "p_value": 0.0,
+      "conclusion": "Supported"
+    }
+  ],
+  "root_causes": [
+    {
+      "cause": "Slow carrier transit",
+      "late_orders": 4282,
+      "share_pct": 65.8,
+      "cumulative_pct": 65.8
+    },
+    {
+      "cause": "Seller missed hand-off deadline",
+      "late_orders": 1684,
+      "share_pct": 25.9,
+      "cumulative_pct": 91.7
+    },
+    {
+      "cause": "Payment approval delay",
+      "late_orders": 396,
+      "share_pct": 6.1,
+      "cumulative_pct": 97.8
+    },
+    {
+      "cause": "Promise shorter than the route needs",
+      "late_orders": 82,
+      "share_pct": 1.3,
+      "cumulative_pct": 99.1
+    },
+    {
+      "cause": "Other",
+      "late_orders": 62,
+      "share_pct": 1.0,
+      "cumulative_pct": 100.1
+    }
+  ]
+}
